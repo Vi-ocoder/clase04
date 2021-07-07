@@ -1,7 +1,7 @@
 package co.com.example.clase4.vo;
 
-public class Ficha {
- //<Atributos>
+public abstract class Ficha {
+    //<Atributos>
     private String color;
     
     //<Constructores>
@@ -10,14 +10,7 @@ public class Ficha {
         int n = 1 ;
         var salida = (n == 1);
         return salida;
-        }
-    
-    private Boolean Mover() {
-        int n = 1 ;
-        var salida = (n == 1);
-        return salida;
     }
-
-
+    public abstract void Mover();
 }
- 
+    

@@ -1,4 +1,4 @@
-package co.com.example.clase4.vo;
+package co.com.example.clase4.vo.Ajedrez;
 
 public class Tablero {
     //<Atributos>
@@ -9,23 +9,21 @@ public class Tablero {
     //<Constructores>
     //<Métodos>
     
-    private Boolean hayEnroque (Integer movRey){
+    public Boolean hayEnroque (Integer movRey){
         var enroque = (movRey == 0);
         return enroque;
     }
     
-    private Boolean esJaque (Integer otroRey){
+    public static Boolean esJaque (Integer otroRey){
         var jaque = (otroRey == 1);
         return jaque;
     }
 
-    private Boolean esJaqueMate (Integer otroRey){
+    public Boolean esJaqueMate (Integer otroRey){ //metodos de clase (estaticos) no necesita objeto para llamarse
         var jaque = (otroRey == 2);
         return jaque;
     }
-    var salida1 = hayEnroque(movRey);
-
-    System.out.println(salida1);
+    
 }
 
 //estoy asignando los metodos a las clases, quiero imprimir el booleano

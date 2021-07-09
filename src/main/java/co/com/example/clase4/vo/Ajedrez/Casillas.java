@@ -1,8 +1,8 @@
-package co.com.example.clase4.vo;
+package co.com.example.clase4.vo.Ajedrez;
 
 public class Casillas {
     //<Atributos>
-    private String color;
+    private Color color;
     private Integer columna;
     private Integer fila;
     

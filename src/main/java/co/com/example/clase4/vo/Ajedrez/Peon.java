@@ -1,22 +1,22 @@
-package co.com.example.clase4.vo;
+package co.com.example.clase4.vo.Ajedrez;
 
-public class Peon {
+public class Peon extends Ficha {
  //<Atributos>
  //<Constructores>
  //<Métodos>
-    private Boolean Comer() {
+    private Boolean comer() {
         int n = 1 ;
         var salida = (n == 1);
         return salida;
         }
     
-    private Boolean Coronar() {
+    private Boolean coronar() {
         int n = 1 ;
         var salida = (n == 1);
         return salida;
         }
 
-    private Boolean mover() {
+    public Boolean mover() {
         int n = 1 ;
         var salida = (n == 1);
         return salida;

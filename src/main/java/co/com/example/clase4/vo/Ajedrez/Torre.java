@@ -4,6 +4,9 @@ public class Torre extends Ficha {
   
     //<Atributos>
     //<Constructores>
+    public Torre(Color color) {
+        super(color);
+    } 
     //<Métodos>
 
     @Override
@@ -11,6 +14,8 @@ public class Torre extends Ficha {
         // TODO Auto-generated method stub
         return null;
     }
+
+   
 
     
 }

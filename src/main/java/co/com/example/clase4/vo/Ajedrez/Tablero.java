@@ -6,21 +6,24 @@ public class Tablero {
         private Integer movRey = 0;
         private Integer otroRey = 0;
       */
-        private Casilla[] casillas;
+        private Casilla[][] casillas;
 
     //<Constructores>
     public Tablero(){
-    casillas = new Casilla [64];
+    casillas = new Casilla [8][8];
     for (int i = 0; i < casillas.length; i++) {
-        casillas [i] = new Casilla (i / 8 , i % 8);
-
-        System.out.println(i + " -> " + casillas[i]);  
+        
+        for (int j = 0 ; j < casillas[i].length; j++){
+            casillas [i] [j] = new Casilla (i , j);
+    
+            System.out.println(i + " , "+ j + " -> " + casillas[i][j]);  
+            }
         }
     
     }
     //<Métodos>
     public void ubicarFicha(Integer fila, Integer columna, Ficha ficha){
-        casillas[8 * fila + columna].ubicarFicha(ficha);
+        casillas[fila][columna].ubicarFicha(ficha);
     }
     /*
     public Boolean hayEnroque (Integer movRey){

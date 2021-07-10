@@ -1,9 +1,16 @@
 package co.com.example.clase4.vo.Ajedrez;
 
 public class Peon extends Ficha {
- //<Atributos>
- //<Constructores>
- //<Métodos>
+
+
+    //<Atributos>
+    //<Constructores>
+ public Peon(Color color) {
+        super(color);
+        
+    }
+    
+    //<Métodos>
     private Boolean comer() {
         int n = 1 ;
         var salida = (n == 1);

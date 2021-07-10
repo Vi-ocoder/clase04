@@ -31,6 +31,7 @@ public class Casilla {
     }
 
     public Ficha obtenerFicha( Ficha ficha){
+
         return ficha;
     }
 

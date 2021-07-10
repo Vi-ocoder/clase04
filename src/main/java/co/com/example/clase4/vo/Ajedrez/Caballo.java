@@ -9,7 +9,7 @@ public class Caballo extends Ficha {
     //<Constructores>
     public Caballo(Color color) {
         super(color);
-        //TODO Auto-generated constructor stub
+        
     }
     
     //<Métodos>
